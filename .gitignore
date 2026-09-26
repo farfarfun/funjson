@@ -177,6 +177,7 @@ cython_debug/
 # 组织规范（SPEC.md §10）额外要求的忽略项
 *.db
 *.rar
+node_modules/
 .run/
 logs/
 
