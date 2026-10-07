@@ -16,6 +16,22 @@ import funjson
 print(funjson.__version__)
 ```
 
+## 开发
+
+安装开发依赖后，在提交前执行代码检查与格式化：
+
+```bash
+uv sync --group dev
+ruff check --fix . && ruff format .
+pytest
+```
+
+版本递增、构建、安装校验和发布统一通过 `funbuild` 执行：
+
+```bash
+funbuild build
+```
+
 ---
 
 ## 关于 farfarfun
